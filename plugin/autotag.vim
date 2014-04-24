@@ -151,7 +151,7 @@ class AutoTag:
                   break
                if size > AutoTag.MAXTAGSFILESIZE:
                   AutoTag.LOGGER.info("Ignoring too big tags file %s", tagsFile)
-                  break
+                  #break
             ret = (file, tagsFile)
             break
          elif tagsDir and tagsDir == self.stop_at:
